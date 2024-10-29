@@ -38,6 +38,8 @@ class Duration:
         self.minutes = minutes
         self.seconds = seconds
 
+    def total_seconds(self) -> int:
+        return self.minutes * 60 + self.seconds
 
     # Provide a developer-friendly string representation of the object.
     # input: Duration for which a string representation is desired. 
@@ -67,7 +69,6 @@ class Song:
         self.artist = artist
         self.title = title
         self.duration = duration
-
 
     # Provide a developer-friendly string representation of the object.
     # input: Song for which a string representation is desired. 
